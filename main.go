@@ -42,7 +42,11 @@ func main() {
 
 	fmt.Printf("Proxying API requests from http://%s to %s ...\n", listen, *fSource)
 
-	http.ListenAndServe(listen, r)
+	err := http.ListenAndServe(listen, r)
+	if err != nil {
+		fmt.Println(err)
+		os.Exit(1)
+	}
 }
 
 func proxy() http.Handler {
