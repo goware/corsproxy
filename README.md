@@ -1,5 +1,7 @@
 # corsproxy
 
+**DEPRECATED: PLEASE USE https://github.com/goware/corsanywhere INSTEAD.**
+
 Debug utility for CORS-enabled servers
 
 ## Usage
